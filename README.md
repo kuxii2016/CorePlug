@@ -2,7 +2,7 @@
 
 Lightweight, extensible, and plugin-driven game server framework written in C#.
 
-Proxyserver provides a modular runtime environment designed for multiplayer games, backend services, and extensible server applications.  
+CorePlug provides a modular runtime environment designed for multiplayer games, backend services, and extensible server applications.  
 The framework focuses on stability, simplicity, performance, and clean plugin integration.
 
 ---
