@@ -58,7 +58,7 @@ namespace Testplugin
         /// <summary>
         /// Gets the plugin author name.
         /// </summary>
-        public string Author => "Kux Michael";
+        public string Author => "Kuxii";
         /// <summary>
         /// Gets the plugin description.
         /// </summary>

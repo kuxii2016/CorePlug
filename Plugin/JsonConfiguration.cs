@@ -16,7 +16,7 @@ namespace Plugin
         /// <param name="basePath">The directory where configuration files are stored.</param>
         public JsonConfiguration(string basePath)
         {
-            this.basePath = basePath;
+            this.basePath =  basePath;
         }
 
         /// <summary>

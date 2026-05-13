@@ -66,19 +66,12 @@ namespace Plugin
         /// <param name="eventBus">Shared event bus instance.</param>
         /// <param name="commandManager">Global command manager.</param>
         /// <param name="services">Shared service provider.</param>
-        public PluginContext(
-            string pluginName,
-            IEventBus eventBus,
-            ConsoleCommandManager commandManager,
-            IServiceProvider services,
-            Version appVersion)
+        public PluginContext(string pluginName, IEventBus eventBus, ConsoleCommandManager commandManager, IServiceProvider services, Version appVersion)
         {
             PluginDirectory = Path.Combine("Plugins", pluginName);
-
-            Directory.CreateDirectory(PluginDirectory);
-
+            Directory.CreateDirectory(Path.Combine("Config", pluginName));
             Logger = new ConsoleLogger(pluginName);
-            Configuration = new JsonConfiguration(PluginDirectory);
+            Configuration = new JsonConfiguration(Path.Combine("Config", pluginName));
             Events = eventBus;
             Services = services;
             Commands = commandManager;
