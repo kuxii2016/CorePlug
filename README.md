@@ -1,4 +1,4 @@
-# Proxyserver
+# CorePlug
 
 Lightweight, extensible, and plugin-driven game server framework written in C#.
 
